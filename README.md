@@ -49,4 +49,4 @@ Expect to spend about 2-4 hours on this.
 
 ---
 
-Good luck—we’re excited to see your work!!
+Good luck—we’re excited to see your work!

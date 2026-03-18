@@ -730,3 +730,4 @@ Changes to Outputs:
   + storage_account_name = (known after apply)
   + vm_private_ssh_key   = (sensitive value)
 ```
+Thank you!

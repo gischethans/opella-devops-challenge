@@ -6,9 +6,8 @@ output "vnet_id" {
   value = module.vnet.vnet_id
 }
 
-output "vm_private_ssh_key" {
-  value     = tls_private_key.ssh.private_key_pem
-  sensitive = true
+output "key_vault_name" {
+  value = azurerm_key_vault.this.name
 }
 
 output "storage_account_name" {

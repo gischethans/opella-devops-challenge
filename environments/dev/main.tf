@@ -33,9 +33,8 @@ module "app_env" {
   }
 }
 
-output "vm_private_ssh_key" {
-  value     = module.app_env.vm_private_ssh_key
-  sensitive = true
+output "key_vault_name" {
+  value = module.app_env.key_vault_name
 }
 
 output "storage_account_name" {

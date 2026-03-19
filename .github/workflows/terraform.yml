@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        environment: [dev, prod]
+        environment: ${{ github.event_name == 'pull_request' && fromJson('["dev","prod"]') || (inputs.environment == 'both' && fromJson('["dev","prod"]') || fromJson(format('["{0}"]', inputs.environment))) }}
     
     defaults:
       run:

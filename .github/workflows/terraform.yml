@@ -128,7 +128,6 @@ jobs:
     needs: terraform-plan
     if: github.event_name == 'workflow_dispatch' && (inputs.environment == 'prod' || inputs.environment == 'both')
     runs-on: ubuntu-latest
-    environment: production
     
     defaults:
       run:
